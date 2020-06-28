@@ -1,11 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
 import css from "./couter.module.css";
 
-export default class Steps extends Component {
-  render() {
-    return (
-      <span className={css.counterValue}>({this.props.currentSteps})</span>
-    );
-  }
+export default function Steps(props) {
+  return <span className={css.counterValue}>({props.currentSteps})</span>;
 }

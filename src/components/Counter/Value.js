@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import css from "./couter.module.css";
-export default class Value extends Component {
-  render() {
-    return <span className={css.counterValue}>{this.props.value}</span>;
-  }
+
+export default function Value(props) {
+  return <span className={css.counterValue}>{props.value}</span>;
 }
